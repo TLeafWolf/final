@@ -17,7 +17,7 @@ Frame_right = tk.Frame(root)
 Frame_right.grid(row=0, column=1)
 
 Bottom_frame= tk.Frame(root)
-Bottom_frame.grid(row=1, column=1)
+Bottom_frame.grid(row=1, column=1, sticky='n')
 
 # Function to fetch low inventory items
 def fetch_low_inventory(threshold):
@@ -58,7 +58,7 @@ result_label.grid(row =10, column =0)
 logo = tk.Label(left_top, text="Logo", width=20, height=2,font =('Helvetica', 18), pady=16)
 logo.grid(row =0, column =0)
 
-low_stock = tk.Button(left_top, text="Low Stock", width=20, height=2,font =('Helvetica', 18), bg = '#ffffff', command=display_low_inventory)
+low_stock = tk.Button(left_bottom, text="Low Stock", width=20, height=2,font =('Helvetica', 18), bg = '#ffffff', command=display_low_inventory)
 low_stock.grid(row =1, column =0)
 
 Aisle = tk.Button(left_top, text="Aisle", width=20, height=2,font =('Helvetica', 18), bg = '#ffffff')
