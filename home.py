@@ -80,7 +80,7 @@ Inventory_label = tk.Label(Frame_right, text="Inventory",font =('Helvetica', 28)
 Inventory_label.grid(row =1, column =1)
 
 
-data = tk.Text(Frame_right, width=100, height=50)
+data = tk.Text(Frame_right, width=100, height=50, state=tk.DISABLED)
 data.grid(row =2, column =1)
 
 add= tk.Button(Bottom_frame, text="Add", width=20, height=2,font =('Helvetica', 18), bg = '#ffffff')
